@@ -1064,8 +1064,8 @@ scale {
     margin-left: 8px;
     margin-right: -13px; }
   scale slider {
-    min-height: 11px;
-    min-width: 23px;
+    min-height: 12px;
+    min-width: 29px;
     margin: 2px;
     border: none;
     border-radius: 0;
@@ -1074,8 +1074,8 @@ scale {
       background-color: #AA0000;
       -gtk-icon-shadow: none; }
   scale.vertical slider {
-    min-height: 23px;
-    min-width: 11px; }
+    min-height: 29px;
+    min-width: 12px; }
   scale value {
     color: alpha(currentColor, 0.55); }
   scale marks {
