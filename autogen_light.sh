@@ -10,9 +10,6 @@ base_theme='Azurra'
 ROOT_DIR="$PWD"
 sass_args="-C --sourcemap=none"
 
-THEME='Trinity'
-
-
 # standard autogen functions 
 load_conf() { source $1/*.conf; }
 fail() { tput setaf 1 && echo 'ERROR: '$@ && exit 1; }
@@ -34,10 +31,10 @@ compile() {
   echo 'done'
 }
 
-(cd src && compile $THEME)
+compile src
 
 # remove previous assets
 rm -rf gtk-3.0/assets
 
-cp -r src/$THEME/*.css gtk-3.0
-cp -r src/$THEME/assets gtk-3.0/assets
+cp -r src/*.css gtk-3.0
+cp -r src/assets gtk-3.0/assets

@@ -6,16 +6,14 @@ AZURRA_PATH=$HOME/Github/Azurra_framework
 
 [ ! -d $AZURRA_PATH ] && fail 'Source directory not found. You need a copy of https://github.com/B00merang-Project/Azurra_framework installed'
 
-themes=(Android Azurra B00merang/blackout iOS macOS OS_X_10.10 Solaris_9 System_4 Win_10)
+input="sources"
+while IFS= read -r line
+do
+  cp -r $AZURRA_PATH/$line src/widgets
+done < "$input"
 
-for theme in ${themes[@]}; do
-  echo "Updating $theme"
-  
-  if [ $theme == 'B00merang/blackout' ]; then
-    cp -r $AZURRA_PATH/$theme src/B00merang
-  else
-    cp -r $AZURRA_PATH/$theme src
-  fi 
-done
+cp -r $AZURRA_PATH/Azurra/_functions.scss src
+cp -r $AZURRA_PATH/Azurra/_colors_public.scss src
+cp -r $AZURRA_PATH/Azurra/_common.scss src
 
 echo "Sources updated"
