@@ -509,15 +509,15 @@ infobar {
         background-color: alpha(black, 0.1); }
 
 image {
-  color: alpha(currentColor, 0.75); }
+  color: currentColor; }
   image:hover {
-    color: alpha(currentColor, 0.9); }
+    color: currentColor; }
   image:selected, image:selected:hover {
     color: #77DD88; }
   image:disabled {
-    color: alpha(currentColor, 0.5); }
+    color: currentColor; }
   view image, view image:hover {
-    color: alpha(currentColor, 0.9); }
+    color: currentColor; }
   view image:selected, view image:selected:hover {
     color: #77DD88; }
 

@@ -8,7 +8,6 @@ Azurra/widgets/_frame.scss
 Azurra/widgets/_iconview.scss
 Azurra/widgets/_flowbox.scss
 Azurra/widgets/_infobar.scss
-Azurra/widgets/_images.scss
 Azurra/widgets/_floating_bar.scss
 macOS/widgets/_terminal.scss
 Azurra/widgets/_miscellaneous.scss

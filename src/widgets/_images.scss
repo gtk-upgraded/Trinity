@@ -1,9 +1,9 @@
 @mixin images() {
   image {
-    color: gtkalpha(currentColor, 0.75);
+    color: currentColor;
 
     &:hover {
-      color: gtkalpha(currentColor, 0.9);
+      color: currentColor;
     }
 
     &:selected, &:selected:hover {
@@ -11,11 +11,11 @@
     }
     
     &:disabled {
-      color: gtkalpha(currentColor, 0.5);
+      color: currentColor;
     }
 
     view &, view &:hover {
-      color: gtkalpha(currentColor, 0.9);
+      color: currentColor;
     }
 
     view &:selected, view &:selected:hover {
