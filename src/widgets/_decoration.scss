@@ -8,12 +8,18 @@
     &:backdrop {
     }
 
-    .fullscreen &, .tiled & {
-      border-radius: 0;
-    }
+    .maximized &,
+    .fullscreen &,
+    .tiled &,
+    .tiled-top &,
+    .tiled-right &,
+    .tiled-bottom &,
+    .tiled-left & { border-radius: 0; }
 
-    .popup & {
-      border-radius: $csd_radius;
+    .popup & { box-shadow: none; }
+
+    .csd.popup & {
+      border-radius: $menu_radius;
       box-shadow: 0 0 0 1px $wm_shadow;
     }
 

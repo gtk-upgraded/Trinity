@@ -12,7 +12,7 @@ Azurra/widgets/_images.scss
 Azurra/widgets/_floating_bar.scss
 macOS/widgets/_terminal.scss
 Azurra/widgets/_miscellaneous.scss
-OS_X_10.10/widgets/_menu.scss
+Azurra/widgets/_menu.scss
 Azurra/widgets/_menuitem.scss
 B00merang/blackout/widgets/_popover.scss
 Azurra/widgets/_modelbutton.scss
