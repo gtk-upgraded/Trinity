@@ -6,12 +6,12 @@
       background-color: $base_color;
       
       &:disabled {
-        border-color: $unfocused_borders;
+        border-color: $disabled_fg_color;
         color: $disabled_fg_color;
         background-color: $disabled_base_color;
 
         &:backdrop {
-          border-color: $unfocused_borders;
+          border-color: $unfocused_disabled_fg_color;
           color: $unfocused_disabled_fg_color;
           background-color: $unfocused_disabled_base_color;
         }
@@ -41,7 +41,7 @@
         background: none;
         box-shadow: -1px 0 $borders;
         
-        &:disabled, &:backdrop { box-shadow: -1px 0 $unfocused_borders; background: none; }
+        &:disabled { box-shadow: -1px 0 $disabled_fg_color; background: none; }
         &.up { border-radius: 0 $entry_radius $entry_radius 0; }
       }
     }

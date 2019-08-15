@@ -1195,11 +1195,11 @@ spinbutton.horizontal {
   border-radius: 0px;
   background-color: #000000; }
   spinbutton.horizontal:disabled {
-    border-color: #55AF66;
+    border-color: #AA0000;
     color: #AA0000;
     background-color: #000000; }
     spinbutton.horizontal:disabled:backdrop {
-      border-color: #55AF66;
+      border-color: #AA0000;
       color: #AA0000;
       background-color: #000000; }
   spinbutton.horizontal:backdrop {
@@ -1221,8 +1221,8 @@ spinbutton.horizontal {
     border-radius: 0;
     background: none;
     box-shadow: -1px 0 #55AF66; }
-    spinbutton.horizontal button:disabled, spinbutton.horizontal button:backdrop {
-      box-shadow: -1px 0 #55AF66;
+    spinbutton.horizontal button:disabled {
+      box-shadow: -1px 0 #AA0000;
       background: none; }
     spinbutton.horizontal button.up {
       border-radius: 0 0px 0px 0; }
